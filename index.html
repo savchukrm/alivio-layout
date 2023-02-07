@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="./css/blocks/home.css" />
     <link rel="stylesheet" href="./css/blocks/how-it-works.css" />
     <link rel="stylesheet" href="./css/blocks/story.css" />
+    <link rel="stylesheet" href="./css/blocks/product.css" />
+    <link rel="stylesheet" href="./css/blocks/card.css" />
+    <link rel="stylesheet" href="./css/blocks/footer.css" />
     <link rel="stylesheet" href="./css/blocks/btn.css" />
 
     <link rel="stylesheet" href="./css/fonts/Georgia/stylesheet.css" />
@@ -139,26 +142,106 @@
         </div>
       </section>
       <section class="story">
-        <div class="container">
+        <div class="container container-wide">
           <div class="story-row">
             <div class="story__content">
-              <div class="story__heading">
+              <h2 class="story__heading">
                 Let's hear about Kayla's success story
-              </div>
+              </h2>
               <div class="story__text">
-                See how well Alivio works in a real customer`s life.
+                See how well Alivio works in a real customer's life.
               </div>
               <div class="story-btn">
-                <a href="#" class="btn btn-big">Let`s get started</a>
+                <a href="#" class="btn btn-big">Let's get started</a>
               </div>
             </div>
-            <div class="story__video none">
-              <video src="./video/customer-story.mp4"></video>
+            <div class="story__video">
+              <div id="video__story-overlay" class="story__video-overlay">
+                <button id="video__story-btn" class="story__video-btn">
+                  <img
+                    id="video__story-btn-icon"
+                    width="82"
+                    height="82"
+                    src="./img/story/play-white.svg"
+                    alt="Play"
+                  />
+                </button>
+              </div>
+
+              <video class="story__video-object" id="video__story">
+                <source src="./video/customer-story.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="product">
+        <div class="container">
+          <div class="product-row">
+            <div class="product-img-wrapper">
+              <img src="./img/product/photo.jpg" alt="" class="product-img" />
+
+              <div class="product__card">
+                <div class="card">
+                  <h3 class="card__title">Customized For</h3>
+
+                  <div class="card__avatar">
+                    <div class="avatar">
+                      <img
+                        class="avatar-img"
+                        src="./img/product/avatar.jpg"
+                        alt="Avatar"
+                      />
+                      <h4 class="avatar-name">Mikayla</h4>
+                    </div>
+                  </div>
+
+                  <div class="card__contents">
+                    <h3 class="card__subtitle">Your custom contents</h3>
+                    <ul>
+                      <li>Understand Your Stress</li>
+                      <li>Anger Management</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="product__content">
+              <h3 class="product__title">Our product</h3>
+              <h2 class="product__subtitle">
+                You tell us your stress, We make your diary
+              </h2>
+              <div class="product__text">
+                <p>
+                  Everyone experiences it, and in different ways. Let Alivio
+                  guide you, in a personalized journal experience, to overcome
+                  your stress.
+                </p>
+              </div>
+              <div class="product-btn">
+                <a href="#" class="btn btn-big"> Find Your Way</a>
+              </div>
             </div>
           </div>
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <img class="footer-logo" src="./img/footer-logo.svg" alt="Logo" />
+          <nav class="footer-nav">
+            <ul>
+              <li><a href="#">Why Alivio</a></li>
+              <li><a href="#">Solutions</a></li>
+              <li><a href="#">Community</a></li>
+              <li><a href="#">Pricing</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/main.js"></script>
   </body>
 </html>
