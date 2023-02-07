@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="./css/blocks/product.css" />
     <link rel="stylesheet" href="./css/blocks/card.css" />
     <link rel="stylesheet" href="./css/blocks/footer.css" />
+    <link rel="stylesheet" href="./css/blocks/mobile-nav.css" />
+    <link rel="stylesheet" href="./css/blocks/mobile-nav-button.css" />
     <link rel="stylesheet" href="./css/blocks/btn.css" />
 
     <link rel="stylesheet" href="./css/fonts/Georgia/stylesheet.css" />
@@ -40,6 +42,27 @@
             <a href="#" class="header__login-link"> Sign in</a>
             <a href="#" class="btn"> Start Trial</a>
           </div>
+          <button type="button" class="mobile-nav-button">
+            <span class="mobile-nav-button__icon"></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="mobile-nav">
+        <img class="mobile-nav-logo" src="./img/logo.svg" alt="Logo" />
+
+        <nav class="mobile-nav-list">
+          <ul>
+            <li><a href="#">Why Alivio</a></li>
+            <li><a href="#">Solutions</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Pricing</a></li>
+          </ul>
+        </nav>
+
+        <div class="mobile-login">
+          <a class="" href="#">Sign in</a>
+          <a href="#" class="btn btn-big">Start Trial</a>
         </div>
       </div>
     </header>
@@ -47,7 +70,10 @@
       <section class="home">
         <div class="container">
           <div class="home__content">
-            <h2 class="home__heading">Be aware, Manage well.</h2>
+            <h2 class="home__heading">
+              Be aware,<br />
+              Manage well.
+            </h2>
             <div class="home__text">
               <p>
                 Everyone experiences stress in different ways. Let Alivio guide
@@ -230,7 +256,9 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__content">
-          <img class="footer-logo" src="./img/footer-logo.svg" alt="Logo" />
+          <div class="footer-logo">
+            <img src="./img/footer-logo.svg" alt="Logo" />
+          </div>
           <nav class="footer-nav">
             <ul>
               <li><a href="#">Why Alivio</a></li>
